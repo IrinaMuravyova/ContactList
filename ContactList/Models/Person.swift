@@ -6,10 +6,10 @@
 //
 
 struct Person {
-    var name: String
-    var surname: String
-    var phone: String
-    var email: String
+    let name: String
+    let surname: String
+    let phone: String
+    let email: String
     
     var fullName: String {
         "\(name) \(surname)"

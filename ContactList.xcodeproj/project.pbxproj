@@ -64,19 +64,67 @@
 		881EFA362B72BE8B00569351 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				881EFA372B72BE8B00569351 /* AppDelegate.swift */,
-				881EFA392B72BE8B00569351 /* SceneDelegate.swift */,
-				881EFA3B2B72BE8B00569351 /* ViewController.swift */,
-				881EFA4B2B72BF9600569351 /* Person.swift */,
-				881EFA4D2B72C06A00569351 /* DataStore.swift */,
-				881EFA4F2B72CCE100569351 /* PersonsListViewController.swift */,
-				881EFA542B72F64400569351 /* PersonDetailsViewController.swift */,
-				881EFA3D2B72BE8B00569351 /* Main.storyboard */,
-				881EFA402B72BE8C00569351 /* Assets.xcassets */,
-				881EFA422B72BE8C00569351 /* LaunchScreen.storyboard */,
-				881EFA452B72BE8C00569351 /* Info.plist */,
+				881EFA562B79CC8C00569351 /* ViewControllers */,
+				881EFA572B79CC9800569351 /* Models */,
+				881EFA5B2B79CCCC00569351 /* Services */,
+				881EFA5A2B79CCB500569351 /* StoryBoards */,
+				881EFA592B79CCAD00569351 /* App */,
+				881EFA582B79CCA300569351 /* Resources */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		881EFA562B79CC8C00569351 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA3B2B72BE8B00569351 /* ViewController.swift */,
+				881EFA4F2B72CCE100569351 /* PersonsListViewController.swift */,
+				881EFA542B72F64400569351 /* PersonDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		881EFA572B79CC9800569351 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA4B2B72BF9600569351 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		881EFA582B79CCA300569351 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA402B72BE8C00569351 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		881EFA592B79CCAD00569351 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA452B72BE8C00569351 /* Info.plist */,
+				881EFA392B72BE8B00569351 /* SceneDelegate.swift */,
+				881EFA372B72BE8B00569351 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		881EFA5A2B79CCB500569351 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA3D2B72BE8B00569351 /* Main.storyboard */,
+				881EFA422B72BE8C00569351 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		881EFA5B2B79CCCC00569351 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				881EFA4D2B72C06A00569351 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
