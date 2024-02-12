@@ -8,11 +8,7 @@
 import UIKit
 
 class PersonsListViewController: UITableViewController {
-    var persons = Person.getPersonsList()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var persons: [Person] = []
 
     // MARK: - Table view data source
 
