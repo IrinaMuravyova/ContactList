@@ -43,11 +43,40 @@
                             <outlet property="delegate" destination="tza-wZ-pSg" id="uoZ-TT-oJA"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="GhO-it-MiO"/>
                     <navigationItem key="navigationItem" title="Persons List" id="Rcj-G2-AEw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXK-yi-qo2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="538" y="70"/>
+            <point key="canvasLocation" x="1463.3587786259541" y="69.718309859154928"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="m8C-ad-3tr">
+            <objects>
+                <tableViewController id="SFh-9P-NWP" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wJJ-Ge-DJO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Quy-ql-2Ok">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Quy-ql-2Ok" id="QOD-fy-krf">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SFh-9P-NWP" id="45T-qn-jdq"/>
+                            <outlet property="delegate" destination="SFh-9P-NWP" id="kxf-cW-pwi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="as0-RI-dcI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="751"/>
         </scene>
         <!--Person Details View Controller-->
         <scene sceneID="zxQ-j3-MJY">
@@ -96,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwj-Aj-oAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313.7404580152672" y="69.718309859154928"/>
+            <point key="canvasLocation" x="2240.4580152671756" y="69.718309859154928"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e1M-fy-u6A">
@@ -107,12 +136,30 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="tza-wZ-pSg" kind="relationship" relationship="rootViewController" id="OZO-8R-zxh"/>
+                        <segue destination="EKx-Ht-z1F" kind="relationship" relationship="rootViewController" id="OZO-8R-zxh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1f9-jV-c4n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-237" y="71"/>
+        </scene>
+        <!--Persons List-->
+        <scene sceneID="Vmx-a6-res">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EKx-Ht-z1F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Persons List" id="e9y-gh-BnK"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g5N-qZ-9x9">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tza-wZ-pSg" kind="relationship" relationship="viewControllers" id="01e-SS-kdr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWW-Gy-SI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="70"/>
         </scene>
     </scenes>
     <resources>
