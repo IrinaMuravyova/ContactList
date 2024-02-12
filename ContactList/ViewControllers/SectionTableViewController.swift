@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SectionTableViewController.swift
 //  ContactList
 //
 //  Created by Irina Muravyeva on 07.02.2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SectionTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
