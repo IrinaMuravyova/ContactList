@@ -24,7 +24,7 @@ struct Person {
     
     static func getPersonsList() -> [Person] {
         //передаю массивы из DataStore для дальнейшей работы
-        let data = DataStore.dataStore
+        let data = DataStore.shared
         //сразу перемешиваю данные, чтобы каждый раз формировались разные наборы
         let names = data.names.shuffled()
         let surname = data.surnames.shuffled()
@@ -53,6 +53,12 @@ struct Person {
         return persons
     }
 
+}
+
+// системные изображения для телефона и емэйла
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }
 
 
