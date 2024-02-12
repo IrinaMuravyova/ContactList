@@ -31,9 +31,9 @@ class PersonsListViewController: UITableViewController {
 
      //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let detailsVC = segue.destination as? PersonDetailsViewController
         if let indexPath = tableView.indexPathForSelectedRow {
-            detailsVC?.person = persons[indexPath.row]}
+            guard let detailsVC = segue.destination as? PersonDetailsViewController else {return}
+            detailsVC.person = persons[indexPath.row]}
     }
 
 
