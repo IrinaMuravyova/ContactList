@@ -7,7 +7,7 @@
 
 class DataStore {
     // создаю объект класса, чтобы получить доступ к массивам из структуры Person
-    static let dataStore = DataStore()
+    static let shared = DataStore()
     
     let names = ["James", "Mary",
                  "Robert", "Patricia",
@@ -32,5 +32,6 @@ class DataStore {
                   "ninetees@brk.ru", "bang_man@google.ru",
                   "catwoman_on_hunt@ya.ru", "phantom_lady@example.ru",
                   "urdreamgirl@yourdoor.com", "hotmale@hotmail.com"]
-    init() {}
+    
+    private init() {}
 }
